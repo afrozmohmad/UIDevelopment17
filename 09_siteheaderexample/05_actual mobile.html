@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            /*border: 2px solid blue;*/
+            background-color: royalblue;
+        }
+        .c1{
+            /*border: 2px solid blue;*/
+            flex: 1;
+        }
+        .c1:nth-child(1){
+            flex: 3;
+        }
+        
+        /*java buttons style text*/
+        .c3{
+            background-color: royalblue;
+            padding: 15px;
+            border: none;
+            font-size: large;
+            padding-left: 0px;
+            padding-top: 25px;
+            color: whitesmoke;
+            
+        }
+
+        /*styling for dropdown box*/
+        .c4{
+            display: none;
+            background-color: royalblue;
+            position: absolute;
+        }
+
+        /*hovering the dropdown box inside the button java*/
+    .c2:hover .c4{
+        display: block;
+        }
+
+        .c4 a{
+            display: block;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="c1">
+            <img src="logoipsum-259.svg" alt="logo" width="250px" height="60px">
+        </div>
+        <div class="c1">
+            <div class="c2">
+                <button class="c3">Java</button>
+                <div class="c4">
+                    <a href="http://www.google.com">Java</a>
+                    <a href="http://www.google.com">JDBC</a>
+                    <a href="http://www.google.com">Servelets</a>
+                    <a href="http://www.google.com">JSP</a>
+                    <a href="http://www.google.com">Hibernate</a>
+                    <a href="http://www.google.com">Spring</a>
+                    <a href="http://www.google.com">Springboot</a>
+                </div>
+            </div>
+        </div>
+        <div class="c1">
+            <div class="c2">
+                <button class="c3">Python</button>
+                <div class="c4">
+                    <a href="http://www.google.com">Python</a>
+                    <a href="http://www.google.com">Django</a>
+                    <a href="http://www.google.com">Flask</a>
+                </div>
+            </div>
+        </div>
+        <div class="c1">
+            <div class="c2">
+                <button class="c3">Javascript</button>
+                <div class="c4">
+                    <a href="http://www.google.com">Javascript</a>
+                </div>
+            </div>
+        </div>
+        <div class="c1">
+            <div class="c2">
+                <button class="c3">Nodejs</button>
+                <div class="c4">
+                    <a href="http://www.google.com">Nodejs</a>
+                </div>
+            </div>
+        </div>
+        <div class="c1">
+            <div class="c2">
+                <button class="c3">Spring</button>
+                <div class="c4">
+                    <a href="http://www.google.com">Spring</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        /* converting block level to inline using display:flex */
+ section {
+    display: flex;
+}
+
+/* grouping selector */
+/* selecting all section and div elements */
+section,
+div {
+    /* border: 1px solid blue; */
+    background-color: royalblue;
+    border-radius: 5px;
+
+    /* adding padding to section and div */
+    padding: 2px;
+
+}
+
+/* decendent selectors  */
+/* selecting only div elements */
+/* using flex:1 it will divide into equal partitions */
+section div {
+    flex: 1;
+    margin: 10px;
+}
+
+section div:first-child {
+    flex: 4;
+}
+
+section div p {
+    padding: 20px;
+    
+    margin: 5px;
+}
+
+select {
+    border: none;
+    color: white;
+    font-size: large;
+    background-color: royalblue;
+}
+
+React
+
+Reply
+
+
+
+
+
+
+
+
+
+  </style>
+</head>
+
+<body>
+<html>
+    <!-- section area -->
+    <section>
+        <!-- div one for logo -->
+        <div>
+            <img src="./logoipsum-259" alt="logo" width="250px" height="60px">
+        </div>
+
+        <!-- div two -->
+        <div>
+            <p>
+               <select name="" id="">
+                <optgroup label="Java">
+                    <option value="corejava">Java</option>
+                    <option value="advancejava">JDBC</option>
+                    <option value="advancejava">Servlets</option>
+                    <option value="advancejava">JSP</option>
+                    <option value="frameworks">Hibernate</option>
+                    <option value="frameworks">Spring</option>
+                    <option value="frameworks">SpringBoot</option>
+                </optgroup>
+               </select>
+            </p>
+        </div>
+
+        <!-- div three -->
+        <div>
+            <p>
+                <select>
+                    <optgroup label="Python">
+                        <option value="python">Python</option>
+                        <option value="python">Django</option>
+                        <option value="python">Flask</option>
+                    </optgroup>
+                </select>
+            </p>
+        </div>
+
+        <!-- div four -->
+        <div>
+            <p>
+                <select>
+                    <optgroup label="JavaScript">
+                        <option value="js">JavaScript</option>
+                    </optgroup>
+                </select>
+            </p>
+        </div>
+
+        <!-- div five -->
+        <div>
+            <p>
+              
+               <select name="" id="">
+                <optgroup label="nodejs">
+                    <option value="nj">Node Js</option>
+                </optgroup>
+               </select>
+            </p>
+        </div>
+
+         <!-- div six -->
+         <div>
+            <p>
+              
+               <select name="" id="">
+                <optgroup label="spring">
+                    <option value="spring">Spring</option>
+                </optgroup>
+               </select>
+            </p>
+        </div>
+    </section>
+</body>
+</html>

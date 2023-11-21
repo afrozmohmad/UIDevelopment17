@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* converting block level to inline using display:flex */
+        #id1{
+            display: flex;
+        }
+
+        /* grouping selector */
+        /* selecting all section and div elements */
+        #id1, .c1{
+            /*border: 2px solid blue;*/
+            background-color: royalblue;
+            border-radius: 5px;
+             /* adding padding to section and div */
+            padding: 2px;
+        }
+
+        /* decendent selectors  */
+        /* selecting only div elements */
+        /* using flex:1 it will divide into equal partitions */
+
+        #id1 .c1{
+            flex: 1;
+            margin: 10px;
+        }
+
+        /*pseudo selector*/
+        #id1 .c1:nth-child(1){
+            flex: 3;
+        }
+
+        #id1 .c1 p{
+            padding: 20px;
+            margin: 5px;
+        }
+        select{
+            border: none;
+            background-color: royalblue;
+            color: white;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="id1">
+        <!--For logo div 1-->
+        <div class="c1"><img src="logoipsum-259.svg" alt="logo" width="250px" height="60px"></div>
+
+        <!--for div 2-->
+        <div class="c1"> 
+            <p>
+               <select name="" id="">
+                <optgroup label="Java">
+                    <option value="corejava">Java</option>
+                    <option value="advancejava">JDBC</option>
+                    <option value="advancejava">Servelets</option>
+                    <option value="advancejava">JSP</option>
+                    <option value="frameworks">Hibernate</option>
+                    <option value="frameworks">Spring</option>
+                    <option value="frameworks">Springboot</option>
+
+                </optgroup>
+               </select>
+            </p>
+        </div>
+
+        <!--for div 3-->
+        <div class="c1">
+            <p>
+                <select name="" id="">
+                    <optgroup label="Python">
+                        <option value="python">Python</option>
+                        <option value="python">Django</option>
+                        <option value="python">Flask</option>
+                    </optgroup>
+                </select>
+            </p>
+        </div>
+
+        <!--for div 4-->
+        <div class="c1">
+            <p>
+                <select name="" id="">
+                    <optgroup label="Javascript">
+                        <option value="js">Javascript</option>
+                    </optgroup>
+
+                </select>
+            </p>
+        </div>
+
+        <!--for div 5-->
+        <div class="c1">
+            <p>
+                <select name="" id="">
+                    <optgroup label="node js">
+                        <option value="nj">Node Js</option>
+                    </optgroup>
+                </select>
+            </p>
+        </div>
+
+        <!--for div 6-->
+        <div class="c1">
+            <p>
+                <select name="" id="">
+                    <optgroup label="Spring">
+                        <option value="spring">Spring</option>
+                    </optgroup>
+                </select>
+            </p>
+        </div>
+
+    </section>
+</body>
+</html>
